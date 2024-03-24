@@ -1,0 +1,22 @@
+﻿@model ViewPerson
+	
+	@{
+
+		 string src;
+		 src = @Model.Gender=="F"?"/css/woman.png":"/css/man.png";
+	}
+<div class="card center" style="width: 18rem;">
+	<img class="card-img-top" src='@src' alt="Card image cap">
+	<div class="card-body">
+		<h5 class="card-title">@Model.JobTitle</h5>
+	</div>
+	<ul class="list-group list-group-flush">
+		<li class="list-group-item"><span>@Model.FirstName</span> <span>@Model.MiddleName</span> </li>
+		<li class="list-group-item">@Model.LastName</li>
+		<li class="list-group-item">@Model.Gender</li>
+	</ul>
+	<div class="card-body">
+		<a href="https://localhost:7256/Home/Index" class="card-link">Back</a>
+
+	</div>
+</div>

@@ -1,18 +1,22 @@
 ﻿@model List<ViewList>
 
 
-@foreach(ViewList item in Model)
+@foreach (ViewList item in Model)
 {
-    string src;
-    {
-         src = item.Gender=="F"?"/css/woman.png":"/css/man.png";
-    }
-    <div  class="card divMain" style="width: 18rem;">
-        <img class="card-img-top img" src='@src' alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">@item.JobTitle</h5>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+	string src;
+	string url;
+	int id = 0;
+	{
+		src = item.Gender == "F" ? "/css/woman.png" : "/css/man.png";
+		id = item.Id;
+		url = "https://localhost:7256/Home/Detail/?id=" + id;
+	}
+	<div class="card divMain" style="width: 18rem;">
+		<img class="card-img-top img" src='@src' alt="Card image cap">
+		<div class="card-body">
+			<h5 class="card-title">@item.JobTitle</h5>
+			<a href='@url' class="btn btn-primary">Detay..</a>
+		</div>
+	</div>
 
 }

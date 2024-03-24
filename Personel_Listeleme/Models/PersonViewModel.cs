@@ -15,7 +15,6 @@ namespace Personel_Listeleme.Models
 	public class ViewPerson
 	{
         public string JobTitle { get; set; }
-		public string Name { get; set; }
 
         public string FirstName { get; set; }
 
