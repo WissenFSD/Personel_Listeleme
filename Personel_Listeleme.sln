@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personel_Listeleme", "Personel_Listeleme\Personel_Listeleme.csproj", "{A3234043-11BE-47AF-B66F-8981CADF1C23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3234043-11BE-47AF-B66F-8981CADF1C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3234043-11BE-47AF-B66F-8981CADF1C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3234043-11BE-47AF-B66F-8981CADF1C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3234043-11BE-47AF-B66F-8981CADF1C23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACBA3A87-D43C-42C3-9B6F-C0AAF83BCE9C}
+	EndGlobalSection
+EndGlobal

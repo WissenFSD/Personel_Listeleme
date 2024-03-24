@@ -1,0 +1,18 @@
+﻿@model List<ViewList>
+
+
+@foreach(ViewList item in Model)
+{
+    string src;
+    {
+         src = item.Gender=="F"?"/css/woman.png":"/css/man.png";
+    }
+    <div  class="card divMain" style="width: 18rem;">
+        <img class="card-img-top img" src='@src' alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@item.JobTitle</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+}
